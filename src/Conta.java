@@ -1,6 +1,6 @@
 public class Conta {
     protected double saldo;
-    private double percentual;
+    protected double percentual;
     
     public double getSaldo(){
        return saldo;
@@ -15,7 +15,7 @@ public class Conta {
     }
     
     public void atualiza(double percentual){
-       this.percentual = percentual;
+       saldo = saldo * (percentual / 100);
     }
     
     
